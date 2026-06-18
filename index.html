@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Portada Equipo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .contenedor {
+            max-width: 600px;
+            margin: auto;
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 15px;
+            border: 2px solid #f1c40f;
+        }
+
+        img {
+            width: 120px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+
+        h2 {
+            color: #f1c40f;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0;
+        }
+
+        nav ul li {
+            margin: 5px 0;
+        }
+
+        nav ul li a {
+            color: #f1c40f;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .integrantes {
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
+        .justificacion {
+            font-size: 13px;
+            margin-top: 15px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #f1c40f;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+details {
+    display: inline-block;
+}
+
+summary {
+    background-color: #f1c40f;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+.submenu {
+    background-color: #f1c40f;
+    margin-top: 5px;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.submenu li {
+    margin: 5px 0;
+}
+
+.submenu li a {
+    color: black;
+    text-decoration: none;
+}
+
+.submenu li a:hover {
+    text-decoration: underline;
+}
+    .carrusel {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.carrusel img {
+    width: 100%;
+    max-width: 500px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #f1c40f;
+}
+    </style>
+</head>
+<body>
+
+<div class="contenedor">
+
+    <!-- 1. Logo -->
+    <img src="Images.jpeg" alt="Logo">
+
+    <!-- 2. Nombre de la escuela -->
+    <h2>Cobaeh San Miguel Vindhó</h2>
+
+    <!-- 3. Video -->
+    <video controls>
+        <source src="cobaeh.mp4" type="video/mp4">
+    </video>
+
+    <!-- 4. Nuevo menú -->
+    <nav class="mi-menu">
+  <ul>
+   <li>
+   <li class="desplegable">
+    <details>
+        <summary> Talleres ▼</summary>
+        <ul class="submenu">
+            <li><a href="robotica.html">Robótica</a></li>
+            <li><a href="ajedrez.html">Ajedrez</a></li>
+            <li><a href="Fútbol.html">Fútbol</a></li>
+            <li><a href="voleibol.html">Voleibol</a></li>
+        </ul>
+    </details>
+</li>
+</li>
+    
+ 
+    
+    <h2 style="color:#f1c40f; margin-top:20px;">Proyectos</h2>
+
+<div class="carrusel">
+    <img id="imagenCarrusel" src="img1.jpg" alt="Carrusel">
+</div>
+
+<script>
+const imagenes = [
+    "Huella polinizadora.jpg",
+    "Huella polinizadora2.jpg",
+    "Huella polinizadora3.jpg",
+    "Huella polinizadora 4.jpg",
+    "huella polinizadora5.jpg",
+   
+];
+
+let indice = 0;
+
+setInterval(function() {
+    indice = (indice + 1) % imagenes.length;
+    document.getElementById("imagenCarrusel").src = imagenes[indice];
+}, 3000);
+</script>
+  </ul>
+</nav>
+<!-- Requisitos -->
+<h3 style="color:#f1c40f;">Requisitos</h3>
+
+<div style="background-color:#1e1e1e; color:white; padding:15px; border-radius:10px; border:2px solid #f1c40f; text-align:left;">
+    <p><b>Entrega de fichas</b>Del 27 de febrero al 25 de junio. Acudir al Plantel San Miguel Vindhó, en las oficinas de dirección escolar, de lunes a viernes en un horario de 09:00 a 14:00hrs.</p>
+    <b>requisitos</b>
+    <p><b>1.</b> Acta de Nacimiento (copia).</p>
+    <p><b>2.</b> CURP Actualizado (impresión).</p>
+    <p><b>3.</b> Constancia de estudios o certificado de secundaria (copia).</p>
+    <p><b>4.</b> Asignación del Número de Seguridad Social IMSS (copia).</p>
+    <p><b>5.</b> Cuenta de correo electrónico (Gmail).</p>
+    <p><b>6.</b> Contestar cuestionario de contexto.</p>
+
+    <hr>
+
+    <p><b>Costo de ficha:</b> $230.00</p>
+
+    <p><b>Dirección:</b><br>
+    Av. Manuel Ávila Camacho s/n, La Loma de San Miguel Vindhó,
+    Tula, Hidalgo, C.P. 42840.
+    </p>
+
+</div>
+    <!-- 5. Justificación -->
+    <div class="justificacion">
+        <p>
+            Es una muy buena opción porque te ofrece muy buenas oportunidades
+            para desarrollar tu conocimiento.
+        </p>
+    </div>
+
+    <!-- 6. Hipervínculo -->
+    <a href="https://www.facebook.com/share/1DS824XvZU/" target="_blank">
+        Página Escolar
+    </a>
+
+    <!-- 7. Integrantes -->
+    <div class="integrantes">
+        <p>Luis Ángel Ángeles Hernández</p>
+        <p>Pedro Lugo Guitierres</p>
+        <p>Kevin Jimenes Peña</p>
+        <p>Kevin Manuel Lopes</p>
+    </div>
+
+    <!-- 8. Nombre del equipo -->
+    <h6>Jaguares Cobaeh</h6>
+
+</div>
+
+</body>
+</html>0
